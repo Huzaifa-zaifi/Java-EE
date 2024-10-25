@@ -1,0 +1,10 @@
+JSP stands for "Java Servlet Page" or "Java Server Page". It is just like Html but it has some additional feature that you can actually
+put Java code inside of JSP using "<% />" something like this tag.
+
+In Servlet, we have to create function for every requests and if we do some changes in static content like "out.print('<h1></h1>')" then we
+have to recompile and redeploy but JSP remove this headache and we can actually do changes in static content like Html, CSS without recompiling or redeploy.
+==========================================================================================================================================
+In JSP, there are tags given below:
+--> Declarative-tag:- Used to declare variables and methods and it's syntax is (" <%!	%> ")
+--> Scriptlet-tag:- Used for java source code like using 'out.println' function and it's syntax is (" <%	%> ")
+--> Expression-tag:- Used to directly print the variable or method output and it's syntax is (" <%=	%>" )

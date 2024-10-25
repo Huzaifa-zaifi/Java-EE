@@ -1,0 +1,30 @@
+==> We don't write JDBC program in Servlet
+==> It is special class with no main method and no public static and only runs on server
+
+==> You can create it by 2 methods Jakarta [new version] and Javax [Old version]
+==> We mostly create Servlet by using "HttpServlet" class method
+===============================================================================================================================
+In Servlet, Parameters are user-defined values means they are provided by the user like when you fill the form and then submit it
+you just send data to Servlet and on Servlet-end we receive those values by using "getParameter()" function. Moreover Attributes are 
+those objects that are attached by one servlet by an object [ session, request, config, context ] and other Servlet can fetch that 
+object to process to logic.
+It's syntax is:-	request.setAttribute("string name",obj)
+			request.getAttribute("name")
+===================================================================================================================================
+** Session Tracking:-
+Normally when a client send request to server and it responds back it uses HTTP protocol and this protocol is state-less meaning that
+it don't store any state or data. So with this, there was a problem that everytime you would go to website you would be treated as a 
+new client. For example if you login once and then close and again go to that page would you wish to login again. That's why we use
+Session tracking for this problem. It can be done in 4 ways:
+	1: Cookies
+	2: Hidden form field
+	3: URL rewriting
+	4: HttpSession
+==================================================================================================================================
+** NOTES:-
+If you want to print multiple dynamic values in Servlet "out.println()" method. Just use """ out.println(<h1> %s </h1>""".formatted(value)) so just replace value with your variable so your dynamic value can be showed into h1.
+
+--> When Java Web application is initialized an object is created known as ServletContext and in Java Web App there can be multiple
+    servlets and when they are initialized there objects are created known as ServletConfig. As in Java everything is Object. ServletContext is superset of ServletConfig where ServletContext contains Web project information while ServletConfig contains servlet
+    information.
+
